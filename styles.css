@@ -1,0 +1,741 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Unicase:wght@300;400;500;600;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+:root {
+    --duskColor: #e37baa;
+    --buttonPrimary: #768e87;
+    --freeSpaceColor: #fff;
+    --textColor: #000;
+}
+
+
+body {
+    /* max-width: 800px; */
+
+    margin: 0 auto;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    
+    /* overflow: hidden; */
+
+}
+
+
+.container{
+    width: 100%;
+    margin: 0 auto;
+    
+}
+
+
+/* font-family: 'Cormorant Unicase', serif;
+
+font-family: 'Poppins', sans-serif; */
+
+
+/* ---------menu slide */
+
+.toggle
+{
+z-index: 2000;
+position:absolute;
+top: 55px;
+right: 10px;
+width: 60px;
+height: 60px;
+/* background: url(https://i.ibb.co/HrfVRcx/menu.png); */
+background: url(./images/outline_menu_white_24dp.png);
+background-repeat: no-repeat;
+background-size: 30px;
+background-position: center;
+cursor: pointer;
+
+
+
+}
+.toggle.active
+{
+/* background: url(https://i.ibb.co/rt3HybH/close.png); */
+background: url(./images/outline_close_white_24dp.png);
+background-repeat: no-repeat;
+background-size: 25px;
+background-position: center;
+cursor: pointer;
+}
+
+.menu
+{
+
+padding-top: 55px;
+position: absolute;
+top: 0;
+right: 0;
+width: 250px;
+height: 50vh;
+display: flex;
+justify-content: left;
+text-align: left;
+z-index: -1000;
+
+
+
+}
+.menu ul
+{
+position: relative;
+}
+.menu ul li
+{
+list-style: none;
+}
+.menu ul li a
+{
+text-decoration: none;
+font-size: 1.2rem;
+color: var(--textColor);
+}
+.menu ul li a:hover
+{
+color: var(--duskColor); 
+}
+
+
+.container{
+    position: absolute;
+    overflow: auto;
+    right: 0px;
+    transition: right 0.5s;
+    
+}
+
+
+
+
+.container.active{
+    right: 250px; 
+}
+
+
+/* MENU MEDIA QUERY FOR SMALL SCREENS */
+
+@media(max-width: 798px){
+
+    .toggle{
+        top:10px;
+        right: 5px;
+        
+    }
+
+    .menu {
+        padding-top: 12px;
+        font-size: .5rem;
+    }
+
+
+}
+
+
+/* ---------menu slide */
+
+
+
+
+.headControl{
+    display: flex;
+}
+
+    .title {
+        font-family: 'Cormorant Unicase', serif;
+    }
+
+    .toTravel,
+    .detailsHeading,
+    .details,
+    .aboutTitle,
+    .adviceHeader {
+    font-family: 'Poppins', sans-serif;
+    
+    }
+
+    .mastHead{
+    display: flex;
+    flex-direction: column;
+    color: var(--freeSpaceColor);
+    align-items: center;
+    text-align: center;
+    margin: 0 auto;
+    width: 100vw;
+    padding-top: 0;
+    background-image: url(./images/3225531_large.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    /* overflow: hidden; */
+
+    }
+
+    .title{
+    margin: 0;
+    font-weight: 700;    
+    font-size: 6rem;
+    line-height: 6rem;
+    overflow: hidden;
+    }
+
+    .topTitle{
+    padding-top: 4rem;
+    }
+
+    .bottomTitle{
+    padding-bottom: 5rem;
+    }
+
+.titleSlug{
+    padding-top:2rem ;
+    margin: 0;
+    font-size: 1.5rem;
+    font-weight: 900;
+}
+
+
+video{
+    display: none;
+}
+
+
+.heroComputer{
+    display: none;
+}
+
+.quote,
+.topBtn{
+    width: 60vw;
+    margin: 0 auto;
+}
+
+
+
+    .whyBook{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        margin: 0 auto;
+        max-width: 60%;
+        /* background-color: rgb(255, 127, 80); */
+        background-color:var(--duskColor);
+        padding: .9rem;
+        border-radius: 8px;
+
+    }
+
+    .detailsHeadBlock {
+        
+        width: 80vw;
+        text-align: center;
+        align-items: center;
+        margin: 0 auto;
+    }
+
+    
+
+
+    .bookBtn{
+        
+        padding-top: 3rem;
+    }
+
+    .bookBtn2{
+        /* width: 40vw; */
+        margin: 0 auto;
+        
+        padding-bottom: 1rem;
+    }
+
+    .bookButton{
+        text-decoration: none;
+        background-color: var(--buttonPrimary);
+        color: var(--freeSpaceColor);
+        padding: 1rem;
+        font-size: .8rem;
+        font-weight: 400;
+        font-size: 1rem;
+        border-radius: 6px;
+    }
+
+    .bookButton:hover,
+    .bookButton:focus{
+        background-color: var(--duskColor);
+    }
+
+    #plusSign{
+        font-size: 14rem;
+    }
+
+    .toTravel {
+        font-size: 1.8rem;
+        font-weight: 200;
+        font-style: italic;
+        padding-bottom: 0;
+        margin-bottom: 0;
+    }
+
+    .toTravelQte {
+        font-size: .8rem;
+        font-weight: 200;
+        margin-top: 0;
+        text-align: right;
+        margin-bottom: 3em;
+        
+    }
+
+    .detailsHeading{
+        font-weight:600 ;
+        margin-top: 2em;
+        margin-bottom: 1.5em;
+    }
+    
+    .details {
+        margin-bottom: 0;
+        color: var(--freeSpaceColor);
+        font-weight: 700;
+    }
+
+    .detailsBody{
+        margin-top: .3em;
+        margin-bottom: 2em;
+        text-align: center;
+    }
+.about{
+    margin: 0 auto;
+    margin-top: 2em;
+    width: 90vw;
+    overflow: hidden;
+}
+
+
+.aboutTitle{
+    font-weight: 600;
+}
+
+.aboutFlex{
+    display: flex;
+    flex-direction: column;
+}
+
+.aboutHero{
+    
+    margin: 0 auto;
+    border-radius: 6px;
+    max-width: 70%;
+}
+
+.aboutBody{
+    max-width: 500px;
+    padding: 0 4em;
+    margin: 0 auto;
+    margin-top: 1.8rem;
+    text-align:left;
+    font-size: .8rem;
+}
+
+
+.links{
+display: table;
+margin: 0 auto;
+padding-top:2.2em;
+padding-bottom: 10px;
+overflow: hidden;
+}
+
+.links img{
+    width: 40%;
+    padding: 0 0px;
+    /* transform: scale(0.5); */
+    transition: 0.5s;
+}
+
+.links img:hover{
+    transform: scale(1.2);
+    
+}
+
+.links ul {
+    padding: 0;
+    list-style-type: none;
+    
+}
+
+.links li{
+    list-style-type: none ;
+    display: inline;
+    float: left;
+    padding: 0;
+    margin: 0;
+}
+
+.links a{
+    display: block;
+    padding: 8px;
+    text-decoration: none;
+    color: var(--textColor);
+}
+
+
+.advice{
+    padding-top: 1em;
+}
+
+    .africaImage{
+        width: 100%;
+        margin: 0 auto;
+        padding-top: 2.5em;
+        display: block;
+    }
+
+    footer{
+        
+        width: 80vw;
+        margin: 2em auto;
+    }
+
+footer a {
+    font-size: .8rem;
+}
+
+    .abtaLogo{
+        padding: 3em;
+    }
+
+    .approvedBody,
+    .adviceBody
+    {
+        font-size: .8rem;
+        font-weight: 300;
+        text-align: center;
+    }
+
+.adviceBody{
+    padding-bottom: 2rem;
+}
+
+    .pullQuote{
+        font-size: 1.2rem;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 300;
+        padding: 1.5rem;;
+    }
+
+.govBtn{
+    margin: 0 auto;
+    text-align: center;
+    width: 300px;
+    /* padding: 2em; */
+}
+
+    .govLink{
+        text-decoration: none;
+        padding: 1rem;
+        color: var(--freeSpaceColor);
+        border-radius: 6px;
+        font-size: .8rem;
+        background-color: #156ec2;
+    }
+
+    .govLink:focus,
+    .govLink:hover{
+        background-color: var(--duskColor);
+    }
+
+
+/* ----------Full Page Layout-------------- */
+
+
+
+    @media(min-width: 900px){
+
+body{
+    min-width: 1000px;
+    
+    
+
+    
+    
+
+}
+
+
+.formScreen{
+    
+    background-color: var(--freeSpaceColor);
+    width: 100vh;
+    
+    z-index: 6000;
+} 
+
+.formPop{
+    position: absolute;
+    margin: 0 auto;
+    top: 25%;
+    left: 25%;
+    align-content: center center;
+    box-sizing: border-box;
+    width: 50%;
+    background-color: var(--buttonPrimary);
+}
+
+
+.relativeMovie{
+    position: relative;
+    overflow: hidden;
+    
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    
+}
+
+
+.mastHead{
+    max-width: 600px;
+    padding: 2em 10em 3em 10em;
+    text-align: center;
+    align-items: center;
+    margin: 0 auto;
+    justify-content:center;
+    background-image: unset;
+    /* overflow: hidden; */
+    
+}
+
+.title{
+    
+    font-size: 5.5rem;
+    color: var(--freeSpaceColor);
+    text-align: center;
+    align-items: center;
+    margin: 0 auto;
+    padding: 0 .7rem;
+    
+    
+
+}
+
+
+
+.video{
+    width:100vw;
+    position: relative;
+}
+
+video{
+    display:inline-block;
+    object-fit: cover;
+    object-position: center;
+    margin: 0 auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 0 0 6px 6px;
+    z-index: -100;
+    }
+
+/* video {
+    
+	opacity: 1;
+	animation-name: fadeInOpacity;
+	animation-iteration-count: 5;
+	animation-timing-function: ease-out;
+	animation-duration: 5s;
+}
+
+@keyframes fadeInOpacity {
+	0% {
+		opacity: 1;
+	}
+	100% {
+		opacity: 0.5;
+	}
+} */
+ 
+
+
+.quote{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin: 0 auto;
+    justify-content:center;
+    width: 100%;
+    margin: 0 auto;
+    color: var(--freeSpaceColor);
+}
+
+
+
+.heroComputer{
+    display: none;
+}
+
+
+.toTravel{
+margin-top: .5rem;
+    font-size: 2.5rem;
+    
+}
+
+.toTravelQte{
+    margin: 0  auto;
+max-width: 500px;
+
+}
+
+
+.bookBtn{
+    border-top: none;
+}
+
+.quoteLeft{
+    /* max-width: 600px; */
+    padding: .8rem;
+}
+
+.pullQuote{
+    padding-top: 0;
+}
+
+
+.mastHead{
+    flex-direction: row;
+}
+
+.whyCol1, .whyCol2{
+display: flex;
+    flex-direction: row;
+}
+
+
+.topBtn{
+    padding: 3rem 0;
+}
+
+.compButton{
+background-color: var(--duskColor);
+}
+
+.compButton:focus,
+.compButton:hover{
+    background-color: var(--buttonPrimary);
+}
+
+
+.topTitle,
+.bottomTitle,
+.titleSlug
+{
+    padding: 0;
+}
+
+
+
+.titleSlug{
+display: none;
+}
+
+
+.detailsHeading{
+    color: var(--freeSpaceColor);
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+
+.whyBook{
+    min-width: 900px;
+    max-width: 950px;
+    background-color:rgba(0, 0, 0, .3);
+    justify-content: center;
+    margin-bottom: 50px;
+    /* background-color: unset; */
+
+    
+    
+    
+}
+
+.whyDiv{
+max-width: 300px;
+min-width: 300px;  
+}
+
+.detailsBody{
+    color: var(--freeSpaceColor);
+}
+
+.aboutFlex{
+    flex-direction: row;
+    justify-content:center;
+    align-items:center;
+}
+
+.aboutTitle,
+.adviceHeader{
+    font-size: 2rem;
+}
+
+.aboutHero{
+    max-width: 300px;
+    min-width: 300px;
+}
+
+.aboutBody{
+    max-width: 300px;
+    min-width: 300px;
+    margin: 0;
+    text-align: left;
+    padding: 0 2.5rem;
+}
+
+
+
+
+
+
+
+.africaImage {
+    display: none;
+}
+
+.endImage{
+    
+
+    width: 100vw;
+    height: 30vw;
+    background-image: url(./images/pexels-taryn-elliott-3889843.jpg);
+    background-position: center 40%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -1;
+    
+
+}
+
+
+.quote,
+.topBtn,
+.bookBtn2{
+    width: 30vw;
+    margin: 0 auto;
+}
+
+    
+
+
+
+}

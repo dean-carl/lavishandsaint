@@ -24,7 +24,7 @@ menu.addEventListener("click", function () {
 
 //--call movies here -------
 
-movieTitle = ["beach", "womanSea", "Dubai", "PalmTreesFly"]
+movieTitle = ["beach", "cityBeach", "hotel1", "hotel2", "womanSea", "Dubai", "PalmTreesFly"]
 
 
 // -------Play random movie----------

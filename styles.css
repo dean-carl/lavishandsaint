@@ -520,6 +520,7 @@ body{
     align-items: center;
     margin: 0 auto;
     padding: 0 .7rem;
+    filter: drop-shadow(.3px .3px 0.5px rgb(101, 99, 99));
     
     
 

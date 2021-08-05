@@ -40,7 +40,7 @@ font-family: 'Poppins', sans-serif; */
 {
 z-index: 2000;
 position:absolute;
-top: 55px;
+/* top: 55px; */
 right: 10px;
 width: 60px;
 height: 60px;
@@ -67,8 +67,9 @@ cursor: pointer;
 .menu
 {
 
-padding-top: 55px;
-position: absolute;
+padding-top: 35px;
+/* position: absolute; */
+position: fixed;
 top: 0;
 right: 0;
 width: 250px;
@@ -93,11 +94,25 @@ list-style: none;
 {
 text-decoration: none;
 font-size: 1.2rem;
-color: var(--textColor);
+/* color: var(--textColor); */
 }
 .menu ul li a:hover
 {
 color: var(--duskColor); 
+}
+
+
+.menuItem{
+    color: var(--textColor);
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.5s ease-in, ease-out 0.2s;
+    will-change: opacity, visibility;
+}
+
+.menuItem.menuActivate{
+    opacity: 1;
+    visibility: visible;
 }
 
 
@@ -111,10 +126,22 @@ color: var(--duskColor);
 
 
 
+.headControl{
+    margin: 0 auto;
+    left: 0px;
+    transition: left 0.5s;
+}
+
+.headControl.active{
+    left: calc(50vw - 258px);
+}
+
 
 .container.active{
     right: 250px; 
 }
+
+
 
 
 /* MENU MEDIA QUERY FOR SMALL SCREENS */
@@ -260,7 +287,7 @@ video{
         color: var(--freeSpaceColor);
         padding: 1rem;
         font-size: .8rem;
-        font-weight: 400;
+        font-weight: 600;
         font-size: 1rem;
         border-radius: 6px;
     }
@@ -386,6 +413,11 @@ overflow: hidden;
 }
 
 
+.adviceHeader{
+    font-size: 1rem;
+}
+
+
 .advice{
     padding-top: 1em;
 }
@@ -494,13 +526,13 @@ body{
 }
 
 
-.formScreen{
+/* .formScreen{
     
     background-color: var(--freeSpaceColor);
     width: 100vh;
     
     z-index: 6000;
-} 
+}  */
 
 .formPop{
     position: absolute;
@@ -517,8 +549,11 @@ body{
 .relativeMovie{
     position: relative;
     overflow: hidden;
-    
+    padding-top: 8em;
+    /* z-index: 6000; */
 }
+
+
 
 .container{
     display: flex;
@@ -641,9 +676,52 @@ max-width: 500px;
 }
 
 
+.headControl{
+    position: fixed;
+    width: 100%;
+    top:0;
+    left: 50%;
+    transform: translate(-50%, -10%);
+    z-index: 6000;
+}
+
 .mastHead{
     flex-direction: row;
+    transition: padding 0.5s;
+    
+    /* position: fixed;
+    top:0;
+    left: 50%;
+    transform: translate(-50%, -10%) */
+    
 }
+
+/* -----title sticker */
+
+.superHeader{
+    background-color:var(--buttonPrimary);
+    
+    
+}
+
+#titleMain,
+#titleMain2,
+#titleMain3,
+#titleMain4{
+    transition: font-size 0.5s;
+}
+
+
+.titleShrink{
+    font-size: 4rem;
+}
+
+
+.mastHeadShrink{
+    padding: 0;
+}
+
+/* -----title sticker */
 
 .whyCol1, .whyCol2{
 display: flex;
@@ -689,7 +767,7 @@ display: none;
 .whyBook{
     min-width: 900px;
     max-width: 950px;
-    background-color:rgba(0, 0, 0, .3);
+    background-color:#999999ee;
     justify-content: center;
     margin-bottom: 50px;
     /* background-color: unset; */
@@ -714,10 +792,10 @@ min-width: 300px;
     align-items:center;
 }
 
-.aboutTitle,
-.adviceHeader{
+.aboutTitle{
     font-size: 2rem;
 }
+
 
 .aboutHero{
     max-width: 300px;
@@ -768,7 +846,7 @@ min-width: 300px;
     margin: 0 auto;
 }
 
-    
+
 
 
 

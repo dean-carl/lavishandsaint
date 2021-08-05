@@ -851,7 +851,7 @@ min-width: 300px;
 
 /* --------for low res laptop */
 
-@media (max-height: 885px){
+@media (max-height: 768px){
 
 .whyBook{
     width:600px;

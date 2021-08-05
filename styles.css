@@ -846,8 +846,43 @@ min-width: 300px;
     margin: 0 auto;
 }
 
+}
 
 
+/* --------for low res laptop */
+
+@media (max-height: 885px){
+
+.whyBook{
+    width:600px;
+}
+
+.detailsBody{
+    font-size: .8rem;
+}
+
+.detailsHeadBlock{
+    font-size: .8rem;
+}
+
+.relativeMovie{
+    padding-top:1rem;
+}
+
+.title{
+    font-size: 4rem;
+}
+
+.topBtn{
+    padding: 1rem;
+    padding-top: 5rem;
+}
+
+.detailsHeading{
+    margin-top: 1em;
+}
 
 
 }
+
+/* --------for low res laptop */

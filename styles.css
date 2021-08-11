@@ -332,8 +332,9 @@ video{
     }
 
     .detailsBody{
-        margin-top: .3em;
-        margin-bottom: 2em;
+        margin-top: .2em;
+        margin-bottom: 1em;
+        padding: 0.5rem 0.8rem 0 0.8rem;
         text-align: center;
     }
 .about{

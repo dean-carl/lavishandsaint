@@ -6,11 +6,25 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
+    <script>
+        var ua = window.navigator.userAgent;
+        var isIE = /MSIE|Trident/.test(ua);
+
+        if (isIE) {
+            alert("Lavish + Saint does not support Internet Explorer.  To experience our website please use a compatible browser.")
+            window.location.replace("https://support.microsoft.com/en-gb/topic/this-website-works-better-in-microsoft-edge-160fa918-d581-4932-9e4e-1075c4713595?ui=en-us&rs=en-gb&ad=gb")
+        } else {
+            console.log("Success!")
+        }
+    </script>
 
     <title>Lavish & Saint Travel </title>
 </head>
 
-<body onload="loadMovieLoop()">
+
+
+
+<body onload="loadMovie()">
 
     <div class="container">
         <!-- <div class="toggle">
@@ -23,7 +37,7 @@
         <div class="relativeMovie">
 
 
-            <video id="movie" src="" muted loop autoplay poster></video>
+            <video id="movie" src="" muted loop autoplay poster="./images/3225531_large.jpg"></video>
 
             <div class="headControl">
                 <!-- <div class="toggle"></div> -->
@@ -215,7 +229,9 @@
             <div class="links">
                 <div>
                     <ul>
-                        <li><a href="#"><img src="./images/email.png" alt=""></a></li>
+                        <li><a
+                                href="mailto:georgina@lavishandsainttravel.co.uk?subject=Luxury%20booking%20information%20request&body=Hi%20Georgina,"><img
+                                    src="./images/email.png" alt=""></a></li>
                         <li><a href="https://www.instagram.com/lavishandsainttravel/"><img
                                     src="./images/instagram-logo.png" alt=""></a></li>
                         <!-- <li><a href="#"><img src="./images/facebook-circular-logo.png" alt=""></a></li>
@@ -291,7 +307,9 @@
     <div class="menu">
         <ul>
             <li><a class="menuItem" href="#about">About</a></li>
-            <li><a class="menuItem" href="#">Book Consultation</a></li>
+            <li><a class="menuItem"
+                    href="mailto:georgina@lavishandsainttravel.co.uk?subject=Consultation%20Request&body=Hi%20Georgina,">Book
+                    Consultation</a></li>
             <li><a class="menuItem" href="https://www.instagram.com/lavishandsainttravel/">Instagram</a></li>
             <!-- <li><a href=" #">Facebook</a></li>
             <li><a href="#">Twitter</a></li> -->

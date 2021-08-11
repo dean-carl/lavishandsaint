@@ -205,7 +205,8 @@ color: var(--duskColor);
     .title{
     margin: 0;
     font-weight: 700;    
-    font-size: 6rem;
+    /* font-size: 6rem; */
+    font-size: 7rem;
     line-height: 6rem;
     filter: drop-shadow(.3px .3px 1px rgb(101, 99, 99));
     overflow: hidden;
@@ -288,7 +289,6 @@ video{
         padding: 1rem;
         font-size: .8rem;
         font-weight: 600;
-        font-size: 1rem;
         border-radius: 6px;
     }
 
@@ -338,7 +338,7 @@ video{
     }
 .about{
     margin: 0 auto;
-    margin-top: 2em;
+    margin-top: 1em;
     width: 90vw;
     overflow: hidden;
 }
@@ -374,8 +374,8 @@ video{
 .links{
 display: table;
 margin: 0 auto;
-padding-top:2.2em;
-padding-bottom: 10px;
+padding-top:1.8em;
+padding-bottom: 6px;
 overflow: hidden;
 }
 
@@ -459,7 +459,8 @@ footer a {
         font-size: 1.2rem;
         font-family: 'Poppins', sans-serif;
         font-weight: 300;
-        padding: 1.5rem;;
+        padding: 1.5rem;
+        padding-bottom: 3rem;
     }
 
 .govBtn{
@@ -474,7 +475,8 @@ footer a {
         padding: 1rem;
         color: var(--freeSpaceColor);
         border-radius: 6px;
-        font-size: .8rem;
+        font-size: .6rem;
+        font-weight: 700;
         background-color: #156ec2;
     }
 
@@ -492,7 +494,7 @@ footer a {
     padding: 0 2em;
     background-color: var(--buttonPrimary);
     color: #fff;
-    font-size: .7rem;
+    font-size: .6rem;
 }
 
 .endSlug a{
@@ -525,27 +527,6 @@ body{
 
 }
 
-
-/* .formScreen{
-    
-    background-color: var(--freeSpaceColor);
-    width: 100vh;
-    
-    z-index: 6000;
-}  */
-
-.formPop{
-    position: absolute;
-    margin: 0 auto;
-    top: 25%;
-    left: 25%;
-    align-content: center center;
-    box-sizing: border-box;
-    width: 50%;
-    background-color: var(--buttonPrimary);
-}
-
-
 .relativeMovie{
     position: relative;
     overflow: hidden;
@@ -565,7 +546,7 @@ body{
 
 .mastHead{
     max-width: 600px;
-    padding: 2em 10em 3em 10em;
+    padding: 2em 10em 2em 10em;
     text-align: center;
     align-items: center;
     margin: 0 auto;
@@ -610,25 +591,6 @@ video{
     border-radius: 0 0 6px 6px;
     z-index: -100;
     }
-
-/* video {
-    
-	opacity: 1;
-	animation-name: fadeInOpacity;
-	animation-iteration-count: 5;
-	animation-timing-function: ease-out;
-	animation-duration: 5s;
-}
-
-@keyframes fadeInOpacity {
-	0% {
-		opacity: 1;
-	}
-	100% {
-		opacity: 0.5;
-	}
-} */
- 
 
 
 .quote{
@@ -730,7 +692,7 @@ display: flex;
 
 
 .topBtn{
-    padding: 3rem 0;
+    padding: .8rem 0;
 }
 
 .compButton{
@@ -758,15 +720,20 @@ display: none;
 
 
 .detailsHeading{
+    margin-top: 1em;
     color: var(--freeSpaceColor);
     font-size: 2rem;
     font-weight: 600;
 }
 
+.detailsHeadBlock{
+    font-size: .8rem;
+}
 
 .whyBook{
     min-width: 900px;
     max-width: 950px;
+    
     background-color:#999999ee;
     justify-content: center;
     margin-bottom: 50px;
@@ -783,6 +750,7 @@ min-width: 300px;
 }
 
 .detailsBody{
+    font-size: .8rem;
     color: var(--freeSpaceColor);
 }
 
@@ -851,7 +819,7 @@ min-width: 300px;
 
 /* --------for low res laptop */
 
-@media (max-height: 768px){
+/* @media (max-width: 1024px){
 
 .whyBook{
     width:600px;
@@ -883,6 +851,6 @@ min-width: 300px;
 }
 
 
-}
+} */
 
 /* --------for low res laptop */
